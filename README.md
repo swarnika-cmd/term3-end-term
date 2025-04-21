@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# MoviesAnco
+
+MoviesAnco is a React-based web application that allows users to search for movies and view detailed information about them. It uses the [OMDb API](https://www.omdbapi.com/) to fetch movie data.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,32 +43,79 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/moviesanco.git
+   cd moviesanco
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies
+    npm install
 
-### Code Splitting
+3. Create a new .env file in the root directory and add your OMDb API key:
+    REACT_APP_API_KEY=your_api_key_here
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Start the development server :
+    npm start
 
-### Analyzing the Bundle Size
+The app will be available at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Project Structure
+    moviesanco/
+    ├── public/
+    │   ├── favicon.ico
+    │   ├── index.html
+    │   ├── logo192.png
+    │   ├── logo512.png
+    │   ├── manifest.json
+    │   └── robots.txt
+    ├── src/
+    │   ├── App.css
+    │   ├── App.js
+    │   ├── App.test.js
+    │   ├── context.js
+    │   ├── Error.js
+    │   ├── Home.js
+    │   ├── index.css
+    │   ├── index.js
+    │   ├── Movie.js
+    │   ├── reportWebVitals.js
+    │   ├── Search.js
+    │   ├── setupTests.js
+    │   ├── SingleMovie.js
+    │   ├── Test.js
+    │   └── useFetch.js
+    ├── .env
+    ├── .gitignore
+    ├── package.json
+    └── [README.md](http://_vscodecontentref_/1)
 
-### Making a Progressive Web App
+Technologies Used
+   1. React: Frontend library for building user interfaces.
+   2. React Router: For routing between pages.
+   3. OMDb API: For fetching movie data.
+   4.  CSS: For styling the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Components
+   1. App: Main component that defines routes.
+   2. Home: Displays the search bar and movie grid.
+   3. Search: Allows users to search for movies.
+   4. Movie: Displays a grid of movies based on the search query.
+   5. SingleMovie: Displays detailed information about a selected movie.
+   6. useFetch: Custom hook for fetching data from the OMDb API.
 
-### Advanced Configuration
+Environment Variables
+    The project uses the following environment variable:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   REACT_APP_API_KEY:<vscode_annotation details='%5B%7B%22title%22%3A%22hardcoded-credentials%22%2C%22description%22%3A%22Embedding%20credentials%20in%20source%20code%20risks%20unauthorized%20access%22%7D%5D'> Your</vscode_annotation> OMDb API key.
 
-### Deployment
+License
+    This project is licensed under the MIT License. See the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Acknowledgments
+    OMDb API for providing movie data.
+    Create React App for bootstrapping the project.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This version includes all the necessary details while retaining the original content.
